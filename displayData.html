@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mofifier mes reponses</title>
+	
+	    <meta name="viewport" content="width=device-width height=device-height initial-scale=1.0 maximum-scale=1.0 user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+	
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<style type="text/css">
+		
+		*{margin: 0px;padding: 0px;}
+		.header{width: 70%;margin-left:15%;padding-top: 12px;padding-bottom: 12px;background: #FFFFFF;border-bottom: 1px solid #E4E4E4;font-family: Poppins;}
+		.header .left_side{margin-left:20px;margin-top:3px;display: inline-block;background: #FFFFFF;width: fit-content;}
+		.header .right_side{margin-top: 35px !important; font-size: 20px; width: fit-content; float: right; margin-right: 20px;}
+        
+        .container{width: 100%;height:300px;background: #233C7F;padding-top:60px;font-family: Poppins;}
+        .container .wrapper{width: 85%;padding-top:17px;padding-bottom: 17px;background: #FFFFFF;margin:auto;} 
+        .container .wrapper .inner_wrapper{width: 92%;margin: auto;background:white;padding-bottom: 40px;padding-top: 40px;} 
+        .container .wrapper .inner_wrapper .titre{color: #233c7f;font-size: 35px;margin-bottom: 30px;background: white;font-weight: 100;display: block;font-family:Poppins;letter-spacing:2px;text-transform:uppercase;}
+        .container .wrapper .inner_wrapper .txt{font-family: Poppins;color: #212529;font-size: 16px;margin-bottom: 30px;background: white;font-weight:normal;letter-spacing: 2px;}
+        
+        .subTitre{font-family:Poppins;margin-left: 15px;font-size: 20px;color: #757575;background: white;font-weight: 300;background-image: linear-gradient(to right, #233C7F 50%, #757575 50%), linear-gradient(to right, #FFFFFF 50%, #FFFFFF 50%);transition: background-position 1s; background-size: 200% 100%;background-repeat: no-repeat;background-position: 100% top, 100% top;-webkit-background-clip: text, border-box;background-clip: text, border-box;color: transparent;}
+        .btn{background: #233C7F;color: white;width: 170px;height: 40px;line-height: 40px;text-align: center;font-size: 12px;margin-top: 15px;}
+        .btn a{background: #233C7F;color: white;text-decoration: none;}
+        .champ_1 {color: #212529;font-size: 18px;font-weight:400;background: white;}
+        .champ_2 {color: #233C7F;font-size: 16px;font-weight:400;background: white;}
+
+        .review1{width:100%;border-top:1px solid #D7D8D8;border-bottom:1px solid #D7D8D8;margin-top:30px;padding-top:30px;padding-bottom:30px;background:white;cursor: pointer;}
+        
+         
+         
+        .review1:hover > .subTitre{background-position: 0% top, 0% top;}
+
+
+         .infos_1{background: white;width: 95%;margin-left: 30px;overflow:hidden;-webkit-transition: all 0.8s ease;-moz-transition: all 0.8s ease;-o-transition: all 0.8s ease;transition: all 0.8s ease;}
+         
+         .infos_1 table{background: white;width: 100%;margin-top: 20px;}
+         .infos_1 table tr td{background: white;padding-bottom: 5px;padding-top: 5px;text-align: left;width:49%;}
+
+         .review2{width:100%;border-top:1px solid #D7D8D8;border-bottom:1px solid #D7D8D8;border-top:none;padding-top:30px;padding-bottom:30px;background:white;cursor: pointer;}
+        
+         
+         
+        .review2:hover > .subTitre{background-position: 0% top, 0% top;}
+
+
+         .infos_2{background: white;width: 95%;margin-left: 30px;overflow:hidden;-webkit-transition: all 0.8s ease;-moz-transition: all 0.8s ease;-o-transition: all 0.8s ease;transition: all 0.8s ease;}
+         
+         .infos_2 table{background: white;width: 100%;margin-top: 20px;}
+         .infos_2 table tr td{background: white;padding-bottom: 5px;padding-top: 5px;text-align: left;width:49%;}
+
+
+         .review3{width:100%;border-top:1px solid #D7D8D8;border-bottom:1px solid #D7D8D8;border-top:none;padding-top:30px;padding-bottom:30px;background:white;cursor: pointer;}
+
+         .review3:hover > .subTitre{background-position: 0% top, 0% top;}
+
+
+         .infos_3{background: white;width: 95%;margin-left: 30px;overflow:hidden;-webkit-transition: all 0.8s ease;-moz-transition: all 0.8s ease;-o-transition: all 0.8s ease;transition: all 0.8s ease;}
+         
+         .infos_3 table{background: white;width: 100%;margin-top: 20px;}
+         .infos_3 table tr td{background: white;padding-bottom: 5px;padding-top: 5px;text-align: left;width:49%;}
+
+
+         .review4{width:100%;border-top:1px solid #D7D8D8;border-bottom:1px solid #D7D8D8;border-top:none;padding-top:30px;padding-bottom:30px;background:white;cursor: pointer;}
+
+         .review4:hover > .subTitre{background-position: 0% top, 0% top;}
+
+
+         .infos_4{background: white;width: 95%;margin-left: 30px;overflow:hidden;-webkit-transition: all 0.8s ease;-moz-transition: all 0.8s ease;-o-transition: all 0.8s ease;transition: all 0.8s ease;}
+         
+         .infos_4 table{background: white;width: 100%;margin-top: 20px;}
+         .infos_4 table tr td{background: white;padding-bottom: 5px;padding-top: 5px;text-align: left;width:49%;}
+
+
+         .review5{width:100%;border-top:1px solid #D7D8D8;border-bottom:1px solid #D7D8D8;border-top:none;padding-top:30px;padding-bottom:30px;background:white;cursor: pointer;}
+
+         .review5:hover > .subTitre{background-position: 0% top, 0% top;}
+
+
+         .infos_5{background: white;width: 95%;margin-left: 30px;overflow:hidden;-webkit-transition: all 0.8s ease;-moz-transition: all 0.8s ease;-o-transition: all 0.8s ease;transition: all 0.8s ease;}
+         
+         .infos_5 table{background: white;width: 100%;margin-top: 20px;}
+         .infos_5 table tr td{background: white;padding-bottom: 5px;padding-top: 5px;text-align: left;width:49%;}
+
+         .review6{width:100%;border-top:1px solid #D7D8D8;border-bottom:1px solid #D7D8D8;border-top:none;padding-top:30px;padding-bottom:30px;background:white;cursor: pointer;}
+
+         .review6:hover > .subTitre{background-position: 0% top, 0% top;}
+
+
+         .infos_6{background: white;width: 95%;margin-left: 30px;overflow:hidden;-webkit-transition: all 0.8s ease;-moz-transition: all 0.8s ease;-o-transition: all 0.8s ease;transition: all 0.8s ease;}
+         
+         .infos_6 table{background: white;width: 100%;margin-top: 20px;}
+         .infos_6 table tr td{background: white;padding-bottom: 5px;padding-top: 5px;text-align: left;width:49%;}
+         
+         
+    
+ 
+         
+
+        
+	</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+
+
+	    $(document).ready(function () {
+
+
+	    $('.infos_1 .civilite').text(localStorage.getItem("civilite_associe"));	
+	    $('.infos_1 .nom').text(localStorage.getItem("nom_associe")+' '+localStorage.getItem("prenom_associe"));	
+	    $('.infos_1 .adresse').text(localStorage.getItem("adresse_associe"));	
+	    $('.infos_1 .code_postal').text(localStorage.getItem("code_postal_associe"));	
+	    $('.infos_1 .ville').text(localStorage.getItem("ville_associe"));	
+	    $('.infos_1 .naissance').text(localStorage.getItem("jour_naissance_associe")+'/'+localStorage.getItem("mois_naissance_associe")+'/'+localStorage.getItem("annee_naissance_associe")+' ,'+localStorage.getItem("lieu_naissance_associe"));	
+	    $('.infos_1 .nationalite').text(localStorage.getItem("nationalite_associe"));	
+	    $('.infos_1 .s_familiale').text(localStorage.getItem("situation_familiale_associe"));	
+	    $('.infos_1 .identifiant').text(localStorage.getItem("type_identifiant_associe")+' : '+localStorage.getItem("code_identifiant_associe"));
+
+
+	    $('.infos_2 .nom').text(localStorage.getItem("nom_societe"));
+	    if (localStorage.getItem("nom_commercial")!='') {$('.infos_2 .nom_commercial').text(localStorage.getItem("nom_commercial"));}	
+	    if (localStorage.getItem("enseigne")!='') {$('.infos_2 .enseigne').text(localStorage.getItem("enseigne"));}
+	    if (localStorage.getItem("sigle")!='') {$('.infos_2 .sigle').text(localStorage.getItem("sigle"));}
+
+
+	    $('.infos_3 .adresse').text(localStorage.getItem("adresse_siege_social"));	
+	    $('.infos_3 .code_postal').text(localStorage.getItem("code_postal_siege_social"));	
+	    $('.infos_3 .ville').text(localStorage.getItem("ville_siege_social"));	
+	    $('.infos_3 .emplacement').text(localStorage.getItem("emplacement_siege_social"));
+
+
+	    $('.infos_4 .activite').text(localStorage.getItem("activite_principal_societe"));	
+	    $('.infos_4 .description').text(localStorage.getItem("description_activite_principal_societe"));
+
+
+	    $('.infos_5 .c_chiffres').text(localStorage.getItem("capital_en_chiffres"));	
+	    $('.infos_5 .c_letteres').text(localStorage.getItem("capital_en_letteres"));
+	    $('.infos_5 .nbr_action').text(localStorage.getItem("nombre_actions"));	
+
+        
+        if (localStorage.getItem("civilite_gerant")!=undefined) 
+        {
+        $('.infos_6 .civilite').text(localStorage.getItem("civilite_gerant"));	
+	    $('.infos_6 .nom').text(localStorage.getItem("nom_gerant")+' '+localStorage.getItem("prenom_gerant"));	
+	    $('.infos_6 .adresse').text(localStorage.getItem("adresse_gerant"));	
+	    $('.infos_6 .code_postal').text(localStorage.getItem("code_postal_gerant"));	
+	    $('.infos_6 .ville').text(localStorage.getItem("ville_gerant"));	
+	    $('.infos_6 .naissance').text(localStorage.getItem("jour_naissance_gerant")+'/'+localStorage.getItem("mois_naissance_gerant")+'/'+localStorage.getItem("annee_naissance_gerant")+' ,'+localStorage.getItem("lieu_naissance_gerant"));	
+	    $('.infos_6 .nationalite').text(localStorage.getItem("nationalite_gerant"));	
+	    $('.infos_6 .s_familiale').text(localStorage.getItem("situation_familiale_gerant"));	
+	    $('.infos_6 .identifiant').text(localStorage.getItem("type_identifiant_gerant")+' : '+localStorage.getItem("code_identifiant_gerant"));
+	    $('.infos_6').css("display","block");
+
+        }
+
+        else
+        {
+        $('.infos_6 .mes').text("Le gerant est l'associe unique.");	
+
+	    $('.infos_6 table').css("display","none");
+
+        }
+	    
+	    
+	    	
+	    	
+	  	
+	    
+         
+        var w = $(window).width();
+
+
+        if (w<600) {
+            
+           $(".right_side").css("float", "none"); 
+           $(".right_side").css("display", "block"); 
+           $(".right_side").css("margin-left", "20px"); 
+           $(".wrapper").css("width", "97%");
+           $(".wrapper td").css("display", "block"); 
+           $(".wrapper tr").css("background", "white"); 
+         
+          } 
+
+          if (w<435) {
+           $(".wrapper").css("width", "95%");
+           $(".wrapper").css("margin", "auto"); 
+           $(".right_side").css("float", "none"); 
+           $(".right_side").css("display", "block"); 
+           $(".right_side").css("margin-left", "20px");  
+         
+          } 
+
+          if (w<350) {
+           $(".wrapper .titre").css("font-size", "23px");
+           $(".wrapper .txt").css("font-size", "12px");
+           $(".wrapper .subTitre").css("font-size", "16px");
+           $(".wrapper .champ_1").css("font-size", "13px"); 
+           $(".wrapper .champ_2").css("font-size", "13px");
+           $(".wrapper .inner_wrapper").css("overflow", "hidden"); 
+            
+         
+          }        
+
+          var h1 = $(".infos_1").height();
+          $(".infos_1").css("height","0px");
+
+          $(".review1").click(function(){
+            if ($(".infos_1").height()==0) 
+            {
+              $(".infos_1").css("height",h1);
+            }
+            else
+            {
+              $(".infos_1").css("height","0px");
+            }
+            
+           });
+
+          var h2 = $(".infos_2").height();
+          $(".infos_2").css("height","0px");
+
+          $(".review2").click(function(){
+            if ($(".infos_2").height()==0) 
+            {
+              $(".infos_2").css("height",h2);
+            }
+            else
+            {
+              $(".infos_2").css("height","0px");
+            }
+            
+           });
+
+          var h3 = $(".infos_3").height();
+          $(".infos_3").css("height","0px");
+
+          $(".review3").click(function(){
+            if ($(".infos_3").height()==0) 
+            {
+              $(".infos_3").css("height",h3);
+            }
+            else
+            {
+              $(".infos_3").css("height","0px");
+            }
+            
+           }); 
+
+
+          var h4 = $(".infos_4").height();
+          $(".infos_4").css("height","0px");
+
+          $(".review4").click(function(){
+            if ($(".infos_4").height()==0) 
+            {
+              $(".infos_4").css("height",h4);
+            }
+            else
+            {
+              $(".infos_4").css("height","0px");
+            }
+            
+           });
+
+
+           var h5 = $(".infos_5").height();
+          $(".infos_5").css("height","0px");
+
+          $(".review5").click(function(){
+            if ($(".infos_5").height()==0) 
+            {
+              $(".infos_5").css("height",h5);
+            }
+            else
+            {
+              $(".infos_5").css("height","0px");
+            }
+            
+           }); 
+
+           
+           var h6 = $(".infos_6").height();
+          $(".infos_6").css("height","0px");
+
+          $(".review6").click(function(){
+            if ($(".infos_6").height()==0) 
+            {
+              $(".infos_6").css("height",h6);
+            }
+            else
+            {
+              $(".infos_6").css("height","0px");
+            }
+            
+           }); 
+ 
+
+	    });
+	    </script>
+</head>
+<body>
+
+<div class="header">
+
+	<div class="left_side"><img style="width:120px;" src="./img/logo.png"></div>
+	<div class="right_side">
+	   <span style="font-size:20px;font-weight:400;background: #FFFFFF;">Besoin d'aide ?</span>  <i class="fa fa-phone-square" style="color:#2F5BBA;margin-right:5px;margin-left:5px;"></i> <span style="color:#2F5BBA;background: #FFFFFF;">05 87 74 11 50</span>
+	</div>
+
+</div>
+
+<div class="container">
+
+	<div class="wrapper">
+		<div class="inner_wrapper">
+        
+        <span class="titre">Vérifiez vos réponses</span>
+
+        <span class="txt">Vous pouvez modifier ou compléter chaque question du formulaire en cliquant sur le bouton « Modifier ».</span>
+        <br>
+        <span class="txt">Vous pourrez également modifier ces informations depuis votre espace client (même après paiement).</span>
+	    <br><br>
+
+	    <div class="review1">
+	    	<i class="fa fa-angle-right" style="font-size:25px;margin-left:10px;color:#233C7F;background:white;"></i><span class="subTitre">ASSOCIÉ DE LA SOCIÉTÉ</span>
+
+	    	<div class="infos_1">
+              <table>
+
+              	 <tr>
+              	 	<td colspan="2"><label class="champ_1">Civilité :</label></td>
+              	 	<td colspan="2"><label class="champ_2 civilite">Mr</label></td>
+              	 </tr>
+
+              	 <tr>
+              	 	<td colspan="2"><label class="champ_1">Nom Complet :</label></td>
+              	 	<td colspan="2"><label class="champ_2 nom">Mekkaoui Mohamed</label></td>
+              	 </tr>
+
+              	 <tr>
+              	 	<td colspan="2"><label class="champ_1">Adress :</label></td>
+              	 	<td colspan="2"><label class="champ_2 adresse">bd zektouni appartement el kodss 2eme etage n2</label></td>
+              	 </tr>
+
+              	 <tr>
+              	 	<td colspan="2"><label class="champ_1">Code postal :</label></td>
+              	 	<td colspan="2"><label class="champ_2 code_postal">125487</label></td>
+              	 </tr>
+
+              	 <tr>
+              	 	<td colspan="2"><label class="champ_1">Ville :</label></td>
+              	 	<td colspan="2"><label class="champ_2 ville">casablanca</label></td>
+              	 </tr>
+
+              	 <tr>
+              	 	<td colspan="2"><label class="champ_1">Date et Lieu de Naissance :</label></td>
+              	 	<td colspan="2"><label class="champ_2 naissance">01/10/1995 , rabat</label></td>
+              	 </tr>
+
+              	 <tr>
+              	 	<td colspan="2"><label class="champ_1">Nationalité :</label></td>
+              	 	<td colspan="2"><label class="champ_2 nationalite">maroccain</label></td>
+              	 </tr>
+
+              	 <tr>
+              	 	<td colspan="2"><label class="champ_1">Situation Familiale :</label></td>
+              	 	<td colspan="2"><label class="champ_2 s_familiale">Célibataire</label></td>
+              	 </tr>
+
+              	 <tr>
+              	 	<td colspan="2"><label class="champ_1">Identifiant :</label></td>
+              	 	<td colspan="2"><label class="champ_2 identifiant">CIN : bh5514</label></td>
+              	 </tr>
+
+
+              </table>
+
+              <div class="btn"><a href="SARL AU.html?update_step1=true">MODIFIER</a></div>
+	    	</div>
+	    </div>
+
+
+        <div class="review2">
+	    	<i class="fa fa-angle-right" style="font-size:25px;margin-left:10px;color:#233C7F;background:white;"></i><span class="subTitre">NOM DE LA SOCIÉTÉ</span>
+
+	    	<div class="infos_2">
+              <table>
+
+              	 <tr>
+              	 	<td colspan="2"><label class="champ_1">Nom de votre société:</label></td>
+              	 	<td colspan="2"><label class="champ_2 nom"></label></td>
+              	 </tr>
+
+              	 <tr>
+              	 	<td colspan="2"><label class="champ_1">Un nom commercial :</label></td>
+              	 	<td colspan="2"><label class="champ_2 nom_commercial">Non</label></td>
+              	 </tr>
+
+              	 <tr>
+              	 	<td colspan="2"><label class="champ_1">Un enseigne :</label></td>
+              	 	<td colspan="2"><label class="champ_2 enseigne">Non</label></td>
+              	 </tr>
+
+              	 <tr>
+              	 	<td colspan="2"><label class="champ_1">Un sigle :</label></td>
+              	 	<td colspan="2"><label class="champ_2 sigle">Non</label></td>
+              	 </tr>
+
+
+              </table>
+
+              <div class="btn"><a href="SARL AU.html?update_step2=true">MODIFIER</a></div>
+	    	</div>
+	    </div>
+
+
+	    <div class="review3">
+	    	<i class="fa fa-angle-right" style="font-size:25px;margin-left:10px;color:#233C7F;background:white;"></i><span class="subTitre">SIÈGE DE LA SOCIÉTÉ</span>
+
+	    	<div class="infos_3">
+              <table>
+
+              	 <tr>
+              	 	<td colspan="2"><label class="champ_1">Adresse :</label></td>
+              	 	<td colspan="2"><label class="champ_2 adresse"></label></td>
+              	 </tr>
+
+              	 <tr>
+              	 	<td colspan="2"><label class="champ_1">Code postal :</label></td>
+              	 	<td colspan="2"><label class="champ_2 code_postal"></label></td>
+              	 </tr>
+
+              	 <tr>
+              	 	<td colspan="2"><label class="champ_1">Ville :</label></td>
+              	 	<td colspan="2"><label class="champ_2 ville"></label></td>
+              	 </tr>
+
+              	 <tr>
+              	 	<td colspan="2"><label class="champ_1">Le siège social est situé :</label></td>
+              	 	<td colspan="2"><label class="champ_2 emplacement"></label></td>
+              	 </tr>
+
+
+              </table>
+
+              <div class="btn"><a href="SARL AU.html?update_step3=true">MODIFIER</a></div>
+	    	</div>
+	    </div>
+
+	    <div class="review4">
+	    	<i class="fa fa-angle-right" style="font-size:25px;margin-left:10px;color:#233C7F;background:white;"></i><span class="subTitre">ACTIVITÉ DE LA SOCIÉTÉ</span>
+
+	    	<div class="infos_4">
+              <table>
+
+              	 <tr>
+              	 	<td colspan="2"><label class="champ_1">Votre activité :</label></td>
+              	 	<td colspan="2"><label class="champ_2 activite"></label></td>
+              	 </tr>
+
+              	 <tr>
+              	 	<td colspan="2"><label class="champ_1">Description :</label></td>
+              	 	<td colspan="2"><label class="champ_2 description"></label></td>
+              	 </tr>
+
+              </table>
+
+              <div class="btn"><a href="SARL AU.html?update_step4=true">MODIFIER</a></div>
+	    	</div>
+	    </div>
+
+	    <div class="review5">
+	    	<i class="fa fa-angle-right" style="font-size:25px;margin-left:10px;color:#233C7F;background:white;"></i><span class="subTitre">CAPITAL SOCIAL</span>
+
+	    	<div class="infos_5">
+              <table>
+
+              	 <tr>
+              	 	<td colspan="2"><label class="champ_1">Capital en chiffres :</label></td>
+              	 	<td colspan="2"><label class="champ_2 c_chiffres"></label></td>
+              	 </tr>
+
+              	 <tr>
+              	 	<td colspan="2"><label class="champ_1">Capital en lettres :</label></td>
+              	 	<td colspan="2"><label class="champ_2 c_letteres"></label></td>
+              	 </tr>
+
+              	 <tr>
+              	 	<td colspan="2"><label class="champ_1">Nombre D'actions :</label></td>
+              	 	<td colspan="2"><label class="champ_2 nbr_action"></label></td>
+              	 </tr>
+
+              </table>
+
+              <div class="btn"><a href="SARL AU.html?update_step5=true">MODIFIER</a></div>
+	    	</div>
+	    </div>
+
+
+	    <div class="review6">
+	    	<i class="fa fa-angle-right" style="font-size:25px;margin-left:10px;color:#233C7F;background:white;"></i><span class="subTitre">GÉRANCE</span>
+            
+            
+	    	<div class="infos_6">
+	    	<label class="champ_1 mes" style="margin-top:25px;margin-bottom:25px;"></label> 
+              <table>
+
+              	 <tr>
+              	 	<td colspan="2"><label class="champ_1">Civilité :</label></td>
+              	 	<td colspan="2"><label class="champ_2 civilite"></label></td>
+              	 </tr>
+
+              	 <tr>
+              	 	<td colspan="2"><label class="champ_1">Nom Complet :</label></td>
+              	 	<td colspan="2"><label class="champ_2 nom"></label></td>
+              	 </tr>
+
+              	 <tr>
+              	 	<td colspan="2"><label class="champ_1">Adress :</label></td>
+              	 	<td colspan="2"><label class="champ_2 adresse"></label></td>
+              	 </tr>
+
+              	 <tr>
+              	 	<td colspan="2"><label class="champ_1">Code postal :</label></td>
+              	 	<td colspan="2"><label class="champ_2 code_postal"></label></td>
+              	 </tr>
+
+              	 <tr>
+              	 	<td colspan="2"><label class="champ_1">Ville :</label></td>
+              	 	<td colspan="2"><label class="champ_2 ville"></label></td>
+              	 </tr>
+
+              	 <tr>
+              	 	<td colspan="2"><label class="champ_1">Date et Lieu de Naissance :</label></td>
+              	 	<td colspan="2"><label class="champ_2 naissance"></label></td>
+              	 </tr>
+
+              	 <tr>
+              	 	<td colspan="2"><label class="champ_1">Nationalité :</label></td>
+              	 	<td colspan="2"><label class="champ_2 nationalite"></label></td>
+              	 </tr>
+
+              	 <tr>
+              	 	<td colspan="2"><label class="champ_1">Situation Familiale :</label></td>
+              	 	<td colspan="2"><label class="champ_2 s_familiale"></label></td>
+              	 </tr>
+
+              	 <tr>
+              	 	<td colspan="2"><label class="champ_1">Identifiant :</label></td>
+              	 	<td colspan="2"><label class="champ_2 identifiant"></label></td>
+              	 </tr>
+
+
+              </table>
+
+              <div class="btn"><a href="SARL AU.html?update_step6=true">MODIFIER</a></div>
+	    	</div>
+	    </div>
+			
+		</div>
+	</div>
+
+
+<!-- 	<div class="dv" style="width:fit-content;padding-top:30px;padding-bottom:30px;margin:auto;">
+		    
+		    <div style="display:inline-block;width:230px;padding:10px;position:relative;background:;">
+		    	<img src="./img/1.png">
+		    	<div style="width:fit-content;position:relative;left:60px;top:-45px;">plus de 300 avis clients</div>
+		    </div>
+
+		    <div style="display:inline-block;width:230px;padding:10px;position:relative;background:;">
+		    	<img src="./img/1.png">
+		    	<div style="width:fit-content;position:relative;left:60px;top:-45px;">plus de 300 avis clients</div>
+		    </div>
+  
+
+	</div> -->
+
+</div>
+
+
+
+</body>
+</html>
